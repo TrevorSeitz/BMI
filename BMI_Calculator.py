@@ -1,8 +1,4 @@
 """
-Write a program that takes input from user and calculate user's BMI (Body Mass Index).
-After calculating the BMI value, print out message indicating the person is 'Underweight', 'Normal', 'Overweight'
-or 'Obese'.
-
 Detail about BMI: https://en.wikipedia.org/wiki/Body_mass_index
 
 BMI is calculated using a persons weight and height. BMI is 'weight' devided by square of height.
@@ -31,9 +27,22 @@ e.g. Input: weight(kg) - 70
             height(m) - 1.5
      Output: Your BMI is 31.1. You are Obese.
 """
-import Get_Inputs
-import Calculate
-import Give_Output
+from Get_Inputs import getinputs
+from Calculate import calculate
+from Give_Output import Give_BMI
+
+bmiNumbers = getinputs()
+weight = bmiNumbers[0]
+height = bmiNumbers[1]
+bmi = calculate(weight, height)
+Give_BMI(bmi)
+
+# bmiNumbers = Get_Inputs.getinputs()
+# bmi = Calculate.calculate(bmiNumbers[0], bmiNumbers[1])
+# bmi = Calculate
+# Give_Output
+
+# bmi = Calculate.calculate(bmiNumbers[0], bmiNumbers[1]).Give_BMI(bmi)
 
 # def getinputs():
 #      weight = input("What is your weight in kg? ")
