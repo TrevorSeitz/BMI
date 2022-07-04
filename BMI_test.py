@@ -1,27 +1,17 @@
 import unittest
 from unittest import result
-from unittest.mock import patch, Mock
 from unittest import TestCase
-import BMI_Calculator 
-import Calculate
+from Calculate import calculate
 
 class TestBMI(TestCase):
     print("printing from TestBMI")
-    @patch('Calculate.input', create=True)
     def test_bmi(self):
-        # mocked_input.side_effect = [60, 1.90]
-        # height = mocked_input()
-        # weight = mocked_input()
+        weight = 60
+        height = 1.9
         bmi = 16.6
-        result = BMI_Calculator.calculate(60, 1.90)
-        self.assertEqual(result, bmi)
-    test_bmi()
+        self.assertEqual(calculate(weight, height), bmi)
 
+
+if __name__ == "__main__":
+    unittest.main()
     
-    
-# class DictCreateTests(TestCase):
-#     @mock.patch('module_under_test.input', create=True)
-#     def testdictCreateSimple(self, mocked_input):
-#         mocked_input.side_effect = ['Albert Einstein', '42.81', 'done']
-#         result = dictCreate(1)
-#         self.assertEqual(result, {'Albert Einstein': [42.81]})
