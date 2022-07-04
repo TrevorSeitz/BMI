@@ -3,6 +3,3 @@ def getinputs():
      height = input("What is your height in M? ")
      bmiNumbers = [weight, height]
      return bmiNumbers
-    #  calculate(weight, height)
-
-getinputs()
