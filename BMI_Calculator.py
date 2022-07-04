@@ -36,30 +36,3 @@ weight = bmiNumbers[0]
 height = bmiNumbers[1]
 bmi = calculate(weight, height)
 Give_BMI(bmi)
-
-# bmiNumbers = Get_Inputs.getinputs()
-# bmi = Calculate.calculate(bmiNumbers[0], bmiNumbers[1])
-# bmi = Calculate
-# Give_Output
-
-# bmi = Calculate.calculate(bmiNumbers[0], bmiNumbers[1]).Give_BMI(bmi)
-
-# def getinputs():
-#      weight = input("What is your weight in kg? ")
-#      height = input("What is your height in M? ")
-#      # return weight, height
-#      caculate(weight, height)
-
-# def calculate(weight, height):
-#      # print("Welcome to the BMI Calculator")
-#      # weight = input("What is your weight in kg? ")
-#      # height = input("What is your height in M? ")
-#      bmiInputs =Get_Inputs()
-#      weight = bmiInputs.weight
-#      height = bmiInputs.height
-#      print("Your BMI is", bmiInputs)
-#      bmi = float(weight) / (float(height) ** 2)
-#      bmi = round(bmi, 1)
-#      return bmi
-
-# getinputs()
