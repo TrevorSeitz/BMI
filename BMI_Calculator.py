@@ -31,30 +31,26 @@ e.g. Input: weight(kg) - 70
             height(m) - 1.5
      Output: Your BMI is 31.1. You are Obese.
 """
+import Get_Inputs
+import Calculate
+import Give_Output
 
-print("Welcome to the BMI Calculator")
+# def getinputs():
+#      weight = input("What is your weight in kg? ")
+#      height = input("What is your height in M? ")
+#      # return weight, height
+#      caculate(weight, height)
 
-weight = input("What is your weight in kg? ")
-height = input("What is your height in M? ")
+# def calculate(weight, height):
+#      # print("Welcome to the BMI Calculator")
+#      # weight = input("What is your weight in kg? ")
+#      # height = input("What is your height in M? ")
+#      bmiInputs =Get_Inputs()
+#      weight = bmiInputs.weight
+#      height = bmiInputs.height
+#      print("Your BMI is", bmiInputs)
+#      bmi = float(weight) / (float(height) ** 2)
+#      bmi = round(bmi, 1)
+#      return bmi
 
-bmi = float(weight) / (float(height) ** 2)
-
-bmi = round(bmi, 1)
-
-
-# weight = input("Enter your weight(kg) - ")
-# height = input("Enter your height(m) - ")
-
-# bmi = float(weight) / (float(height) ** 2)
-# # bmi = weight / (height * height)  # other option for calculating
-
-# bmi = round(bmi, 1)
-
-if bmi <= 18.5:
-     print(f"Your BMI is {bmi}. You are Underweight.")
-elif bmi <= 25:
-     print("Your BMI is {bmi}.  You are Normal.")
-elif bmi <= 30:
-     print("Your BMI is {bmi}. You are Overweight.")
-else:
-     print("Your BMI is {bmi}.  You are Obese.")
+# getinputs()
